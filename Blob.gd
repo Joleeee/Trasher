@@ -14,5 +14,8 @@ func _process(delta):
 	pass
 
 func hit():
+	var p = Global.particle()
+	p.global_position = global_position
+	get_parent().add_child(p)
 	self.queue_free()
 	pass
