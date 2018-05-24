@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://PartMat.tres" type="Material" id=1]
+[ext_resource path="res://Scripts/Particle.gd" type="Script" id=2]
+
+
+[node name="Particle" type="Particles2D" index="0"]
+
+modulate = Color( 1, 0.308594, 0.308594, 1 )
+position = Vector2( 0, 1 )
+emitting = true
+amount = 1024
+lifetime = 0.2
+one_shot = false
+preprocess = 0.0
+speed_scale = 1.0
+explosiveness = 0.0
+randomness = 0.0
+fixed_fps = 0
+fract_delta = true
+visibility_rect = Rect2( -100, -100, 200, 200 )
+local_coords = true
+draw_order = 0
+process_material = ExtResource( 1 )
+texture = null
+normal_map = null
+h_frames = 1
+v_frames = 1
+script = ExtResource( 2 )
+_sections_unfolded = [ "Material", "Process Material", "Time", "Visibility" ]
+
+
